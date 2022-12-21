@@ -1,7 +1,7 @@
 import { ToastAndroid } from 'react-native';
-import { AppContext } from '../../contexts/App';
-import { useDrawerNavigation } from '../../hooks/useDrawerNavigation';
-import { Screen } from '../../screens';
+import { AppContext } from './contexts/App';
+import { useDrawerNavigation } from './hooks/useDrawerNavigation';
+import { Screen } from './screens/';
 
 export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const navigation = useDrawerNavigation();
@@ -11,7 +11,7 @@ export const AppProvider = ({ children }: { children: React.ReactNode }) => {
   };
 
   const unlogged = () => {
-    navigation.navigate(Screen.Auth);
+    
     showToast('Por favor, faça o login.');
   };
 
