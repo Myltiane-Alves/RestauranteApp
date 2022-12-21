@@ -1,37 +1,42 @@
 import React from 'react';
-import { Container } from './styles';
+import { Text } from 'react-native';
+import { Card } from './Card';
+import { CardapioCards } from './CardapioCards';
+import { CardapioDescription } from './CardapioDescription';
+import { CardapioTitle } from './CardapioTitle';
+import { CardapioWrap } from './CardapioWrap';
 
 export const Cardapio = () => {
     return (
-        <Container>
-            <header>
-             <h2>Nosso Cárdapio </h2>
-            </header>
-                <div className="cards">
-                    <div className="card">
+        <CardapioWrap>
+          
+            <CardapioTitle>Nosso Cárdapio </CardapioTitle>
+            
+                <CardapioCards>
+                    <Card>
                         <img src="./images/café.png" alt="café" />
-                        <h3>Bebida</h3>
-                        <p>
+                        <CardapioDescription>Bebida</CardapioDescription>
+                        <Text>
                             Oferecemos o melhor sabor de cada um dos setores. você vai adorar.
-                        </p>
-                    </div>
-                    <div className="card">
+                        </Text>
+                    </Card>
+                    <Card>
                         <img src="./images/prato-de-sopa.png" alt="Prato de sopa" />
-                        <h3>Refeição</h3>
-                        <p>
+                        <CardapioDescription>Refeição</CardapioDescription>
+                        <Text>
                             Oferecemos o melhor sabor de cada um dos setores. você vai adorar.
-                        </p>
-                    </div>
-                    <div className="card">
+                        </Text>
+                    </Card>
+                    <Card>
                         <img src="./images/refeicao.png" alt="Refeição" />
-                        <h3>Prato especial</h3>
-                        <p>
+                        <CardapioDescription>Prato especial</CardapioDescription>
+                        <Text>
                             Oferecemos o melhor sabor de cada um dos setores. você vai adorar.
-                        </p>
-                    </div>
-                </div>
+                        </Text>
+                    </Card>
+                </CardapioCards>
            
-        </Container>
+        </CardapioWrap>
     )
 }
 

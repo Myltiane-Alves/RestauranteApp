@@ -1,56 +1,40 @@
 import React from 'react';
+import { Button } from '../Button';
+import { MenuCards } from './MenuCards';
+import { MenuDescription } from './MenuDescription';
+import { MenuTitle } from './MenuTitle';
 import { Container } from './styles';
 
 export const MenuComponent = () => {
     return (
         <Container>
-            <header>
-                <h2>Menu Principal</h2>
-            </header>
-            <div className="cards">
-                <div className="card">
-                    <div className="image">
-                        <img src="/images/pizza.png" alt="Frango Tailandês" />
-                    </div>
+            <MenuTitle>Menu Principal</MenuTitle>
 
-                    <Text>Frango Tailandês </Text>
-                    <p>R$35,00</p>
+            <MenuCards>
+                <img src="/images/pizza.png" alt="Frango Tailandês" />
+                <MenuTitle>Frango Tailandês </MenuTitle>
+                <MenuDescription>R$35,00</MenuDescription>
+            </MenuCards>
+            <MenuCards>
+                <img src="/images/pizza2.png" alt="Massa tailandêsa" />
+                <MenuTitle>Massa Tailandêsa</MenuTitle>
+                <MenuDescription>R$44,99</MenuDescription>
+            </MenuCards>
+            <MenuCards>
+                <img src="/images/pizza2.png" alt="Massa tailandêsa" />
+                <MenuTitle>Salada de Frutas</MenuTitle>
+                <MenuDescription>R$44,99</MenuDescription>
+            </MenuCards>
 
-                </div>
-                <div className="card">
-                    <div className="image">
-                        <img src="/images/pizza2.png" alt="Massa tailandêsa" />
-                    </div>
-                    <h3>Massa Tailandêsa</h3>
-                    <p>R$44,99</p>
-
-                </div>
-                <div className="card">
-                    <div className="image">
-                        <img src="/images/pizza2.png" alt="Massa tailandêsa" />
-                    </div>
-                    <h3>Salada de Frutas</h3>
-                    <p>R$44,99</p>
-
-                </div>
-
-                <div className="card">
-                    <div className="image">
-                        <img src="/images/pizza.png" alt="Frango Tailandês" />
-                    </div>
-
-                    <h3>Frango Tailandês </h3>
-                    <p>R$35,00</p>
-
-                </div>
-            </div>
-
-            <div className="containerButton">
-                <button>
-                    Veja mais receitas
-                    
-                </button>
-            </div>
+            <MenuCards>
+                <img src="/images/pizza.png" alt="Frango Tailandês" />
+                <MenuTitle>Frango Tailandês </MenuTitle>
+                <MenuDescription>R$35,00</MenuDescription>
+            </MenuCards>
+           
+            <Button>
+                Veja mais receitas
+            </Button>
         </Container>
     )
 }

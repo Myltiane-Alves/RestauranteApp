@@ -9,11 +9,11 @@ import MenuComponent from "../../components/MenuComponent"
 export const HomeScreen = () =>  {
     return (
         <Fragment>
-            <Header />
+            {/* <Header />
             <AboutComponent />
             <Cardapio />
             <MenuComponent />
-            <Contact />
+            <Contact /> */}
             <Footer />
         </Fragment>
     )

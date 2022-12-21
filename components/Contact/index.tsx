@@ -1,33 +1,41 @@
 import React from 'react';
+import { vars } from '../../values';
+import { Button } from '../Button';
+import { InputField } from '../InputField';
+import { ContactBody } from './ContactBody';
+import { ContactTitle } from './ContactTitle';
+import { ContactWrap } from './ContactWrap';
 import { Container } from './styles';
 
 
 const Contact = () => {
     return (
-        <Container>
-            <div className="cards ">
-                <div className="card">
-                    <h2>
-                        Junte-se a nós e <br />
-                        ganhe desconto de até 40%
-                    </h2>
-                    <form>
-                        <div className="field">
-                            <input type="email" placeholder="Digite seu Email" />
-                        </div>
+        <ContactWrap>
+            <ContactBody>
 
-                        <div className="containerButton">
-                            <button type="submit">
-                                Inscreva-se
-                            </button>
-
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-
-        </Container>
+                <ContactTitle>
+                    Junte-se a nós e <br />
+                    ganhe desconto de até 40%
+                </ContactTitle>
+                <InputField label="Nome Completo" style={{ marginTop: vars.space }} />
+                <InputField
+                    label="E-mail"
+                    style={{ marginTop: vars.space }}
+                    inputProps={{
+                        autoComplete: 'email',
+                        keyboardType: 'email-address',
+                    }}
+                />
+                <InputField
+                    label="Mensagem"
+                    style={{ marginTop: vars.space, marginBottom: vars.space }}
+                    inputProps={{
+                        multiline: true,
+                    }}
+                />
+                <Button color="blue">Enviar</Button>
+            </ContactBody>
+        </ContactWrap>
     )
 }
 
