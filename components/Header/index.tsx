@@ -22,9 +22,9 @@ const Header = () => {
             dolores repudiandae mollitia itaque consequuntur aliquam?
         </p>
         <button>
-          <Link className="link" href="/Menu">
+          
             Cardápio
-          </Link>
+       
         </button>
       </header>
 

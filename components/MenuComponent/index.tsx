@@ -1,7 +1,5 @@
 import React from 'react';
-import Link from 'next/link'
 import * as S from './styles'
-
 
 export const MenuComponent = () => {
     return (
@@ -49,9 +47,8 @@ export const MenuComponent = () => {
 
             <div className="containerButton">
                 <button>
-                    <Link className="link" href="/menu">
-                        Veja mais receitas
-                    </Link>
+                    Veja mais receitas
+                    
                 </button>
             </div>
         </S.Container>
