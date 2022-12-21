@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components/native";
 
-export const Container = styled.section`
+export const Container = styled.View`
   width: 100%;
   .about {
     padding: 20px;
@@ -42,13 +42,13 @@ export const Container = styled.section`
     }
   }
   .containerImg {
-    background-image: url("../../images/restaurantee.jpeg");
+    /* background-image: url("../../images/restaurantee.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     /* width: 400px; */
     width: 100%;
-    height: 400px;
+    height: auto;
     padding-top: 1.375rem;
 
   }

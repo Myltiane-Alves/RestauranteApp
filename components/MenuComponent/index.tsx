@@ -1,9 +1,9 @@
 import React from 'react';
-import * as S from './styles'
+import { Container } from './styles';
 
 export const MenuComponent = () => {
     return (
-        <S.Container>
+        <Container>
             <header>
                 <h2>Menu Principal</h2>
             </header>
@@ -13,7 +13,7 @@ export const MenuComponent = () => {
                         <img src="/images/pizza.png" alt="Frango Tailandês" />
                     </div>
 
-                    <h3>Frango Tailandês </h3>
+                    <Text>Frango Tailandês </Text>
                     <p>R$35,00</p>
 
                 </div>
@@ -51,7 +51,7 @@ export const MenuComponent = () => {
                     
                 </button>
             </div>
-        </S.Container>
+        </Container>
     )
 }
 

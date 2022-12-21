@@ -1,11 +1,10 @@
 import React from 'react';
-
-import * as S from './styles';
+import { Container } from './styles';
 
 const AboutComponent = () => {
     return (
 
-        <S.Container>
+        <Container>
             <div className="about">
 
                 <h2>A Melhor Pizza da cidade</h2>
@@ -17,9 +16,9 @@ const AboutComponent = () => {
                 <div className="containerButton">
 
                     <button>
-                        <Link className="link" href="/Menu">
+                       
                             Veja mais receitas
-                        </Link>
+                 
                     </button>
                 </div>
 
@@ -27,7 +26,7 @@ const AboutComponent = () => {
             <div className="containerImg">
                 {/* <img src="/images/restaurantee.jpeg" alt="" /> */}
             </div>
-        </S.Container>
+        </Container>
 
     )
 }

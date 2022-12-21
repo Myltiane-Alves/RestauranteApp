@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
-export const Container = styled.section`
+export const Container = styled.View`
   .cards {
     border-radius: 1rem;
     overflow: hidden;
-    height: 40rem;
-    background: url("../../images/contact.jpg") center no-repeat fixed;
+    height: auto;
+  
     position: relative;
     .cards::after{
       content: '';

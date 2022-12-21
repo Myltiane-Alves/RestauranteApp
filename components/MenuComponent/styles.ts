@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
-export const Container = styled.section`
+export const Container = styled.View`
     flex-direction: column;
     /* padding-top: 0; */
     /* margin-top: 0; */

@@ -1,9 +1,9 @@
 import React from 'react';
-import * as S from "./styles";
+import { Container } from './styles';
 
 export const Cardapio = () => {
     return (
-        <S.Container>
+        <Container>
             <header>
              <h2>Nosso Cárdapio </h2>
             </header>
@@ -31,7 +31,7 @@ export const Cardapio = () => {
                     </div>
                 </div>
            
-        </S.Container>
+        </Container>
     )
 }
 

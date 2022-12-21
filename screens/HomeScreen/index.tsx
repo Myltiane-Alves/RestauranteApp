@@ -6,7 +6,7 @@ import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 import MenuComponent from "../../components/MenuComponent"
 
-export const HomeScreen = () => {
+export const HomeScreen = () =>  {
     return (
         <Fragment>
             <Header />

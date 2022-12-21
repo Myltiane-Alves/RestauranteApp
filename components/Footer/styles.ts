@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components/native";
 
-export const Container = styled.footer`
+export const Container = styled.View`
   background-color: #000;
   padding: 16px;
   display: flex;

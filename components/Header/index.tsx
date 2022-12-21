@@ -1,12 +1,11 @@
 import React from 'react';
 
-import * as S from './styles';
-import { FormSchedule } from '../FormSchedule';
+import { Container } from './styles';
 
 const Header = () => {
   return (
 
-    <S.Container>
+    <Container>
 
       <header>
         <h1>
@@ -75,7 +74,7 @@ const Header = () => {
       </div>
 
        {/* <FormSchedule /> */}
-    </S.Container>
+    </Container>
 
   )
 }

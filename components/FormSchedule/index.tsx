@@ -1,10 +1,11 @@
 import React from 'react';
-import * as S from './styles';
+
+import { Container } from './styles';
 
 export const FormSchedule = () => {
     return (
 
-        <S.Container>
+        <Container>
             <div className="form">
                 <form>
 
@@ -50,7 +51,7 @@ export const FormSchedule = () => {
                     </div>
                 </form>
             </div>
-        </S.Container>
+        </Container>
 
     )
 }

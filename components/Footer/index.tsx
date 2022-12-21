@@ -1,76 +1,31 @@
-import * as S from './styles';
+
+import { FooterIcons } from './FooterIcons';
+import { FooterText } from './FooterText';
+import { FooterTitle } from './FooterTitle';
+import { FooterWrap } from './FooterWrap';
+import { Container } from './styles';
 
 export default function Footer() {
     return (
-      <S.Container>
-        <div className="content">
-
-          <div className="box-1">
-            <h2>Pizzaria e Hamburgueria</h2>
-            <div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et,
-                in gravida. Sit diam duis mauris nulla cursus.
-                Erat et lectus vel ut sollicitudin elit at amet.
-              </p>
-
-            </div>
-            <div className="containerIcons">
-              <img src="images/linkedin.png" alt="Nosso Linkedin confira nossa rede social" />
-              <img src="images/instagram.png" alt="Nosso instagram confira nossa rede social" />
-              <img src="images/tiktok.png" alt="Nosso tiktok confira nossa rede social" />
-              <img src="images/googleplay.png" alt="Baixe já nosso app no Google Play" />
-              {/* <span>Google Play</span> */}
-            </div>
-          </div>
-
-          <div className="boxLink">
-            <h4>Links</h4>
-            <ul>
-              <li>Home</li>
-              <li>Blog</li>
-              <li>Loja</li>
-              <li>Contato</li>
-              <li>Login</li>
-            </ul>
-          </div>
-
-          <div className="box">
-            <h4>Sobre nós</h4>
-            <ul>
-              <li>Carreiras</li>
-              <li>Nossas Lojas</li>
-              <li>Nossos cuidados</li>
-              <li>Termos e Condições</li>
-              <li>Política de Privacidade</li>
-            </ul>
-          </div>
-
-          <div className="box">
-            <h4>Atendimento</h4>
-            <ul>
-              <li>Centro de ajuda</li>
-              <li>Como comprar</li>
-              <li>Acompanhe seu Pedido</li>
-              <li>Atacado e Varejo</li>
-              <li>Devoluções</li>
-            </ul>
-          </div>
-
-          <div className="box">
-            <h4>Endereço</h4>
-            <ul>
-              <li>
-                Brasília - DF
-              </li>
-              <li>
-                Setor Comecial Sul
-              </li>
-              <li>
-                Distrito Federal
-              </li>
-            </ul>
-          </div>
-        </div>
-      </S.Container>
+      <FooterWrap>
+          
+        <FooterTitle>Pizzaria e Hamburgueria</FooterTitle>
+        <FooterText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et,
+          in gravida. Sit diam duis mauris nulla cursus.
+          Erat et lectus vel ut sollicitudin elit at amet.
+        </FooterText>    
+        <FooterIcons>
+          <img src="images/linkedin.png" alt="Nosso Linkedin confira nossa rede social" />
+          <img src="images/instagram.png" alt="Nosso instagram confira nossa rede social" />
+          <img src="images/tiktok.png" alt="Nosso tiktok confira nossa rede social" />
+          <img src="images/googleplay.png" alt="Baixe já nosso app no Google Play" />
+          {/* <span>Google Play</span> */}
+        </FooterIcons>
+        <FooterTitle>Endereço</FooterTitle>
+        <FooterText>
+          Brasília - DF Setor Comecial Sul Distrito Federal
+        </FooterText>   
+        
+      </FooterWrap>
     )
 }

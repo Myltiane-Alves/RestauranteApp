@@ -1,10 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
-export const Container = styled.section`
+export const Container = styled.View`
   flex-direction: column;
-  background: url('../../images/banner-1-1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
   margin-bottom: 1rem;
   padding: 10px;
   height: auto;

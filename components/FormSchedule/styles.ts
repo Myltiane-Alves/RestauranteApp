@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from 'styled-components/native';
 
-export const Container = styled.section`
+export const Container = styled.View`
     /* height: 195vh; */
     flex-direction: column;
     .form {

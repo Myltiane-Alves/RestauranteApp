@@ -1,10 +1,10 @@
 import React from 'react';
-import * as S from './styles';
+import { Container } from './styles';
 
 
 const Contact = () => {
     return (
-        <S.Container>
+        <Container>
             <div className="cards ">
                 <div className="card">
                     <h2>
@@ -27,7 +27,7 @@ const Contact = () => {
                 </div>
             </div>
 
-        </S.Container>
+        </Container>
     )
 }
 
