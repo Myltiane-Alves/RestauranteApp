@@ -52,38 +52,4 @@ export const Container = styled.section`
         }
     }
 
-
-
-
-
-    @media (min-width: 767px) {
-        .cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr ;
-            h2 {
-            font-size: 4rem;
-            }
-        }
-    }
-
-    @media (min-width: 1024px) {
-        /* margin-bottom: 10rem; */
-        header {
-            padding-top: 50px;
-            h2 {
-                font-size: 48px;
-                font-weight: 700;
-            }
-
-        }
-        .cards {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            .card {
-                h4 {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-    }
 `;

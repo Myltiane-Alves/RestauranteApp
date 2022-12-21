@@ -1,5 +1,5 @@
 import * as S from './styles';
-import playStore from '../../assets/images/google-play.png';
+
 export default function Footer() {
     return (
       <S.Container>

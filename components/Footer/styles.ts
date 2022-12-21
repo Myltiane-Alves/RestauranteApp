@@ -63,25 +63,6 @@ export const Container = styled.footer`
         }
       }
     }
-    /* .boxLink {
-      padding-left: 70px;
-    } */
-
-    @media (min-width: 768px) {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      /* background-color: #111; */
-    }
-
-    @media (min-width: 1200px) {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      padding: 50px;
-      .boxLink {
-        padding-left: 70px;
-      }
-
-    }
   }
 
 `;

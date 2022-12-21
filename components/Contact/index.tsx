@@ -1,6 +1,6 @@
 import React from 'react';
 import * as S from './styles';
-import Link from 'next/link'
+
 
 const Contact = () => {
     return (

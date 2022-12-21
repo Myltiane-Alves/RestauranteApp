@@ -52,26 +52,4 @@ export const Container = styled.section`
     padding-top: 1.375rem;
 
   }
-  @media (min-width: 768px) {
-    display: flex;
-    .about-img {
-      height: auto;
-      width: 100%;
-      background-size: cover;
-    }
-  }
-  @media (min-width: 1280px) {
-    padding: 20px;
-    .about {
-      h2 {
-        font-size: 48px;
-        line-height: 50px;
-        text-align: left;
-      }
-      p {
-        font-size: 22px;
-        line-height: 30px;
-      }
-    }
-  }
 `;
