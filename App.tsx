@@ -1,6 +1,4 @@
 import 'react-native-gesture-handler';
-import { Fragment } from 'react';
-import { Routes } from './routes';
 import { AppProvider } from './providers/app';
 import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator, DrawerContent } from '@react-navigation/drawer';

@@ -1,9 +1,13 @@
-
+import { Image } from 'react-native';
 import { FooterIcons } from './FooterIcons';
 import { FooterText } from './FooterText';
 import { FooterTitle } from './FooterTitle';
 import { FooterWrap } from './FooterWrap';
-import { Container } from './styles';
+import linkedin from '../../assets/images/linkedin.png';
+import instagram from '../../assets/images/instagram.png';
+import tiktok from '../../assets/images/tiktok.png';
+import googleplay from '../../assets/images/googleplay.png';
+import { FooterImage } from './FooterImage';
 
 export default function Footer() {
     return (
@@ -15,11 +19,11 @@ export default function Footer() {
           Erat et lectus vel ut sollicitudin elit at amet.
         </FooterText>    
         <FooterIcons>
-          <img src="images/linkedin.png" alt="Nosso Linkedin confira nossa rede social" />
-          <img src="images/instagram.png" alt="Nosso instagram confira nossa rede social" />
-          <img src="images/tiktok.png" alt="Nosso tiktok confira nossa rede social" />
-          <img src="images/googleplay.png" alt="Baixe já nosso app no Google Play" />
-          {/* <span>Google Play</span> */}
+          <FooterImage source={linkedin} />
+          <FooterImage source={instagram} />
+          <FooterImage source={tiktok} />
+          <FooterImage source={googleplay} />
+       
         </FooterIcons>
         <FooterTitle>Endereço</FooterTitle>
         <FooterText>
