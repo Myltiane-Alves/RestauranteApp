@@ -1,23 +1,34 @@
 import React from 'react';
+import { ImageBackground, Image } from 'react-native';
 import { vars } from '../../values';
 import { Button } from '../Button';
 import { InputField } from '../InputField';
 import { ContactBody } from './ContactBody';
+import { ContactImgBackground } from './ContactImgBackground';
 import { ContactTitle } from './ContactTitle';
 import { ContactWrap } from './ContactWrap';
-import { Container } from './styles';
+import image from '../../assets/images/contact.jpg'
 
 
 const Contact = () => {
     return (
         <ContactWrap>
+           
+            <ContactImgBackground
+            >
+                <Image 
+                    source={image}
+                    resizeMode="cover"
+                
+                />
+            </ContactImgBackground>
             <ContactBody>
 
                 <ContactTitle>
                     Junte-se a nós e
                     ganhe desconto de até 40%
                 </ContactTitle>
-                {/* <InputField label="Nome Completo" style={{ marginTop: vars.space }} /> */}
+                
                 <InputField
                     label="E-mail"
                     style={{ marginTop: vars.space }}
@@ -26,13 +37,7 @@ const Contact = () => {
                         keyboardType: 'email-address',
                     }}
                 />
-                {/* <InputField
-                    label="Mensagem"
-                    style={{ marginTop: vars.space, marginBottom: vars.space }}
-                    inputProps={{
-                        multiline: true,
-                    }}
-                /> */}
+              
                 <Button style={{ marginTop: vars.space }} color="blue">Enviar</Button>
             </ContactBody>
         </ContactWrap>

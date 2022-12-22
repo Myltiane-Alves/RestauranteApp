@@ -11,8 +11,8 @@ export const HomeScreen = () =>  {
         <Fragment>
             {/* <Header />
             <AboutComponent />
-            <Cardapio />
-            <MenuComponent /> */}
+            <Cardapio /> */}
+            <MenuComponent /> 
             <Contact /> 
             <Footer />
         </Fragment>

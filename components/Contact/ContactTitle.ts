@@ -3,6 +3,6 @@ import { vars } from '../../values';
 
 export const ContactTitle = styled.Text`
 font-size: 20px;
-color: ${vars.dark};
-font-weight: 700;
+color: ${vars.white};
+font-weight: 800;
 `;
