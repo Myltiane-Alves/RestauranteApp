@@ -1,32 +1,29 @@
 import React from 'react';
-import { Container } from './styles';
+import { Image } from 'react-native';
+import { vars } from '../../values';
+import { Button } from '../Button';
+import { AboutTitle } from './AboutTitle';
+import { AboutWrap } from './AboutWrap';
+import { Description } from './Description';
+import restaurante from '../../assets/images/restaurantee.jpeg';
+import { AboutImage } from './AboutImage';
 
 const AboutComponent = () => {
     return (
 
-        <Container>
-            <div className="about">
+        <AboutWrap>
 
-                <h2>A Melhor Pizza da cidade</h2>
-                <p>
-                    Nossa Hamburgueria oferece os melhores Hambúrguer<br /> que você já experimentou.
-                    Vamos aproveitar a oportunidade para impressioná-lo com algo que é ótimo para você.
-                    Mantemos nossas qualidades alimentares no seu melhor.
-                </p>
-                <div className="containerButton">
+            <AboutTitle>A Melhor Pizza da cidade</AboutTitle>
+            <Description>
+                Nossa Hamburgueria oferece os melhores Hambúrguer que você já experimentou.
+                Vamos aproveitar a oportunidade para impressioná-lo com algo que é ótimo para você.
+                Mantemos nossas qualidades alimentares no seu melhor.
+            </Description>
 
-                    <button>
-                       
-                            Veja mais receitas
-                 
-                    </button>
-                </div>
-
-            </div>
-            <div className="containerImg">
-                {/* <img src="/images/restaurantee.jpeg" alt="" /> */}
-            </div>
-        </Container>
+            <AboutImage  source={restaurante}   />
+            <Button style={{ marginTop: vars.space }} color="blue"> Veja mais receitas </Button>
+         
+        </AboutWrap>
 
     )
 }

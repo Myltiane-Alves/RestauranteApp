@@ -5,16 +5,18 @@ import Contact from "../../components/Contact"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 import MenuComponent from "../../components/MenuComponent"
+import { Layout } from "../../providers/Layout"
 
 export const HomeScreen = () =>  {
     return (
-        <Fragment>
-            {/* <Header />
-            <AboutComponent />
-            <Cardapio /> */}
-            <MenuComponent /> 
-            <Contact /> 
-            <Footer />
-        </Fragment>
+        <Layout>
+            {/* <AboutComponent /> */}
+            <Header />
+            
+            {/* <Cardapio />  */}
+            {/* <MenuComponent />  */}
+            {/* <Contact />  */}
+            {/* <Footer /> */}
+        </Layout>
     )
 }

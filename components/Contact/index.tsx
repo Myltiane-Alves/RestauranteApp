@@ -14,14 +14,15 @@ const Contact = () => {
     return (
         <ContactWrap>
            
-            <ContactImgBackground
+            <Image 
+                source={image}
+                // resizeMode="cover"
+                style={{ height: 400}}
+            
+            />
+            {/* <ContactImgBackground
             >
-                <Image 
-                    source={image}
-                    resizeMode="cover"
-                
-                />
-            </ContactImgBackground>
+            </ContactImgBackground> */}
             <ContactBody>
 
                 <ContactTitle>

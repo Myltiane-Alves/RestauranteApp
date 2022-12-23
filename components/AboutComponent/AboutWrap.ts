@@ -1,6 +1,6 @@
 import styled from 'styled-components/native';
 
-export const MenuWrap = styled.View`
+export const AboutWrap = styled.View`
     /* width: 104px; */
     background-color: #edede9;
     height: auto;
@@ -8,8 +8,8 @@ export const MenuWrap = styled.View`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border-radius: 8px; */
+    border-radius: 8px;
     /* margin-right: 8px; */
     padding-top: 50px;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
 `;

@@ -7,38 +7,42 @@ import { Container } from './styles';
 import { ImageBackground, Image } from 'react-native';
 import  PFrango from '../../assets/images/pizza.png';
 import  PFrangoTailandes from '../../assets/images/pizza2.png';
+import { MenuImage } from './MenuImage';
+import { MenuWrap } from './MenuWrap';
+import { vars } from '../../values';
+import { Title } from './Title';
 
 export const MenuComponent = () => {
     return (
-        <Container>
+        <MenuWrap>
             <MenuTitle>Menu Principal</MenuTitle>
 
             <MenuCards>
-                <Image  source={PFrango}  resizeMode="cover" />
-                <MenuTitle>Frango Tailandês </MenuTitle>
+                <MenuImage  source={PFrango}   />
+                <Title>Frango Tailandês </Title>
                 <MenuDescription>R$35,00</MenuDescription>
             </MenuCards>
             <MenuCards>
-                <Image  source={PFrangoTailandes}  resizeMode="cover" />
-                <MenuTitle>Massa Tailandêsa</MenuTitle>
+                <MenuImage  source={PFrangoTailandes}   />
+                <Title>Massa Tailandêsa</Title>
                 <MenuDescription>R$44,99</MenuDescription>
             </MenuCards>
-            <MenuCards>
-                <Image  source={PFrangoTailandes}  resizeMode="cover" />
+            {/* <MenuCards>
+                <MenuImage  source={PFrangoTailandes}  resizeMode="cover" />
                 <MenuTitle>Salada de Frutas</MenuTitle>
                 <MenuDescription>R$44,99</MenuDescription>
             </MenuCards>
 
             <MenuCards>
-                <Image  source={PFrango}  resizeMode="cover" />
+                <MenuImage  source={PFrango}  resizeMode="cover" />
                 <MenuTitle>Frango Tailandês </MenuTitle>
                 <MenuDescription>R$35,00</MenuDescription>
-            </MenuCards>
+            </MenuCards> */}
            
-            <Button>
+            <Button style={{ marginTop: vars.space }} color="blue">
                 Veja mais receitas
             </Button>
-        </Container>
+        </MenuWrap>
     )
 }
 
