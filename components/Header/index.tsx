@@ -10,6 +10,8 @@ import banner from '../../assets/images/banner-1.jpg';
 import { Title } from './Title';
 import { HomeBannerContent } from './HomeBannerContent';
 import { SchedulesWrap } from '../FormSchedule/SchedulesWrap';
+import { View } from 'react-native';
+import { TitleSchedules } from './TitleSchedules';
 
 
 const Header = () => {
@@ -36,49 +38,87 @@ const Header = () => {
     <HomeBannerWrap>
       <HomeBanner source={banner} resizeMode="cover" />
       <HomeBannerContent>
-        <Title>Prove os melhores Deliciosos pratos.</Title>
-        <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </Description>
-        <Button style={{ marginTop: vars.space }} color="blue">
-          Faça Já sua Reserva
-        </Button>
+        <View
+          style={{ padding: 10}}
+        >
+          <Title>Aproveita as Melhores Pizzas da Cidades.</Title>
+          <Description>
+            Venha Conferiri Nossas, Promoções Todos os Dias da Semana
+          </Description>
+
+        </View>
+        <View
+          style={{
+            alignItems: 'flex-start', 
+            alignContent: 'flex-start',
+            width: 405
+
+          }}
+        
+        >
+          <Button style={{
+            marginTop: vars.space, 
+            width: 250,
+            height: 50
+          }} color="blue">
+            Faça Já sua Reserva
+          </Button>
+
+        </View>
       </HomeBannerContent>
-      {/* <SchedulesWrap>
-        <Title>Reserva de Mesa</Title>
+      <View
+        style={{
+          backgroundColor: 'transparent',
+          flex: 1,
+        
+          
+        }}
+      >
+        {/* <SchedulesWrap>
+          <TitleSchedules>Reserva de Mesa</TitleSchedules>
+         
 
-        <InputField
-          label="E-mail"
-          style={{ marginTop: vars.space }}
-          inputProps={{
-            autoComplete: 'email',
-            keyboardType: 'email-address',
-            value: email,
-            onChangeText: setEmail,
-          }}
-        />
-        <InputField
-          label="Nome Completo"
-          style={{ marginTop: vars.space }}
-          inputProps={{ value: name, onChangeText: setName }}
-        />
-        <InputField
-          label="E-mail"
-          style={{ marginTop: vars.space }}
-          inputProps={{
-            autoComplete: 'email',
-            keyboardType: 'email-address',
-            value: email,
-            onChangeText: setEmail,
-          }}
-        />
-        <InputField
-          label="Nome Completo"
-          style={{ marginTop: vars.space }}
-          inputProps={{ value: name, onChangeText: setName }}
-        />
+          <InputField
+            label="E-mail"
+            style={{ marginTop: vars.space, width: 250, padding: 200 }}
+            inputProps={{
+              autoComplete: 'email',
+              keyboardType: 'email-address',
+              value: email,
+              onChangeText: setEmail,
+            }}
+          />
+          <InputField
+            label="Nome Completo"
+            style={{ marginTop: vars.space }}
+            inputProps={{ value: name, onChangeText: setName }}
+          />
+          <InputField
+            label="E-mail"
+            style={{ marginTop: vars.space }}
+            inputProps={{
+              autoComplete: 'email',
+              keyboardType: 'email-address',
+              value: email,
+              onChangeText: setEmail,
+            }}
+          />
+          <InputField
+            label="Nome Completo"
+            style={{ marginTop: vars.space }}
+            inputProps={{ value: name, onChangeText: setName }}
+          />
 
-      </SchedulesWrap> */}
+          <Button style={{
+            marginTop: vars.space, 
+            width: 250,
+            height: 50
+          }} color="blue">
+            Faça Já sua Reserva
+          </Button>
+        </SchedulesWrap> */}
+
+      </View>
 
 
 

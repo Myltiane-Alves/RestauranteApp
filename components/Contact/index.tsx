@@ -32,14 +32,22 @@ const Contact = () => {
                 
                 <InputField
                     label="E-mail"
-                    style={{ marginTop: vars.space }}
+                    style={{ marginTop: vars.space, borderColor: 'white', }}
                     inputProps={{
                         autoComplete: 'email',
                         keyboardType: 'email-address',
                     }}
                 />
               
-                <Button style={{ marginTop: vars.space }} color="blue">Enviar</Button>
+                <Button 
+                    style={{ 
+                        marginTop: vars.space,
+                        backgroundColor: vars.blueButton
+                    }} 
+                    color="blue"
+                >
+                    Enviar
+                </Button>
             </ContactBody>
         </ContactWrap>
     )

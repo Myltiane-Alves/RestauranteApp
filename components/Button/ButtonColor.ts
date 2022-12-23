@@ -2,6 +2,7 @@ export type ButtonColor =
   | 'green'
   | 'red'
   | 'blue'
+  | 'white'
   | 'black'
   | 'text'
   | 'gray'

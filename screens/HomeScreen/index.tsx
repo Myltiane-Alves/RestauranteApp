@@ -10,13 +10,12 @@ import { Layout } from "../../providers/Layout"
 export const HomeScreen = () =>  {
     return (
         <Layout>
-            {/* <AboutComponent /> */}
             <Header />
-            
+            <AboutComponent />
             {/* <Cardapio />  */}
-            {/* <MenuComponent />  */}
-            {/* <Contact />  */}
-            {/* <Footer /> */}
+            <MenuComponent /> 
+            <Contact /> 
+            <Footer />
         </Layout>
     )
 }

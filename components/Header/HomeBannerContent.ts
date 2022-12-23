@@ -3,9 +3,12 @@ import { vars } from '../../values';
 
 export const HomeBannerContent = styled.View`
   position: absolute;
+  /* left: 10px; */
+  flex: 1;
   margin-top: 50px;
+  text-align: left;
   /* bottom: ${vars.space * 3}px; */
-  /* right: ${vars.spacePx}; */
+  /* right: ${vars.spacePx} ; */
   align-items: flex-end;
-  /* background-color: red; */
+  /* background-color: yellow; */
 `;

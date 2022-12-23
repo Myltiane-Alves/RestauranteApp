@@ -1,11 +1,12 @@
 import styled from 'styled-components/native';
 import { vars } from '../../values';
-export const Title = styled.Text`
-    font-size: 38px;
+export const TitleSchedules = styled.Text`
+    font-size: 40px;
     display: flex;
     /* text-align: left; */
     /* width: 100%; */
     /* background-color: red; */
-    color: ${vars.white};
+    color: ${vars.blue};
     font-weight: 700;
+    
 `;

@@ -9,6 +9,8 @@ export function getBgColor(color: ButtonColor) {
       return vars.dark;
     case 'blue':
       return vars.blue;
+    case 'white':
+      return vars.blue;
     case 'black':
       return vars.black;
     case 'gray':
