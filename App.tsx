@@ -19,7 +19,7 @@ export default function App() {
              headerShown: false,
            }}
         >
-          <Drawer.Screen name={Screen.Home} component={HomeScreen} />
+          {/* <Drawer.Screen name={Screen.Home} component={HomeScreen} /> */}
           <Drawer.Screen name={Screen.Auth} component={AuthScreen} />
         </Drawer.Navigator>    
       </AppProvider>

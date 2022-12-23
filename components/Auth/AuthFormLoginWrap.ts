@@ -1,3 +1,5 @@
 import styled from 'styled-components/native';
 
-export const AuthFormLoginWrap = styled.View``;
+export const AuthFormLoginWrap = styled.View`
+    
+`;

@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { useCallback, useRef, useState } from 'react';
-import { RefreshControl, ScrollView } from 'react-native';
+import { Dimensions, RefreshControl, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { LayoutProviderProps } from "./LayoutProviderProps"
 import styled from 'styled-components/native';
@@ -15,6 +15,9 @@ const LayoutScrollView = styled.ScrollView`
 
 const LayoutContent = styled.View`
   margin-top: 69px;
+  flex: 1;
+  background-color: #fff;
+  min-height: ${Dimensions.get('window').height}px;
 `;
 
 export const Layout = ({

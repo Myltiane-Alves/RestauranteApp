@@ -6,4 +6,5 @@ export const AuthFormFooter = styled.View`
   justify-content: space-between;
   min-height: 50px;
   margin-top: ${vars.spacePx};
+  /* background-color: white; */
 `;

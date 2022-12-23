@@ -6,8 +6,7 @@ import { AuthFormFooter } from '../AuthFormFooter';
 import { Button } from '../../Button';
 import { useDrawerNavigation } from '../../../hooks/useDrawerNavigation';
 import { Screen } from '../../../screens';
-
-export default function AuthFormLogin() {
+export const AuthFormLogin = () => {
     const navigation = useDrawerNavigation();
     const [password, setPassword] = useState('')
     const [email, setEmail] = useState('')
@@ -16,9 +15,6 @@ export default function AuthFormLogin() {
 
     return (
         <AuthFormLoginWrap>
-
-
-
             <InputField
                 label="E-mail"
                 style={{ marginTop: vars.space }}
@@ -48,7 +44,7 @@ export default function AuthFormLogin() {
                 </Button>
 
                 <Button
-                    color="white"
+                    color="blue"
                     // loading={isLoading}
                     // disabled={isLoading}
                     
@@ -66,10 +62,6 @@ export default function AuthFormLogin() {
                     Este não é o seu e-mail?
                 </Button>
             </AuthFormFooter>
-
-            {/* <p>Todos os Direitos Reservados @Myltiane 2022</p> */}
-
-
         </AuthFormLoginWrap>
     )
 }
