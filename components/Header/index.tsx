@@ -51,7 +51,8 @@ const Header = () => {
           style={{
             alignItems: 'flex-start', 
             alignContent: 'flex-start',
-            width: 405
+            width: 405,
+            left: 10
 
           }}
         
