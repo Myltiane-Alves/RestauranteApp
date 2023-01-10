@@ -3,14 +3,15 @@ import AboutComponent from "../../components/AboutComponent"
 import Cardapio from "../../components/Cardapio"
 import Contact from "../../components/Contact"
 import Footer from "../../components/Footer"
-import Header from "../../components/Header"
+import { HeaderNav } from "../../components/HeaderNav"
+import HomeBanner from "../../components/HomeBanner"
 import MenuComponent from "../../components/MenuComponent"
 import { Layout } from "../../providers/Layout"
 
 export const HomeScreen = () =>  {
     return (
-        <Layout>
-            <Header />
+        <Layout header={<HeaderNav />}>
+            <HomeBanner />
             <AboutComponent />
             {/* <Cardapio />  */}
             <MenuComponent /> 

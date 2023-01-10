@@ -3,7 +3,7 @@ import { vars } from '../../values';
 import { Button } from '../Button';
 import { InputField } from '../InputField';
 import { Description } from './Description';
-import { HomeBanner } from './HomeBanner';
+import { HomeBannerImage } from './HomeBanner';
 import { HomeBannerWrap } from './HomeBannerWrap';
 // import { DateTimePickerAndroid } from '@react-native-community/datetimepicker';
 import banner from '../../assets/images/banner-1.jpg';
@@ -14,7 +14,7 @@ import { View } from 'react-native';
 import { TitleSchedules } from './TitleSchedules';
 
 
-const Header = () => {
+const HomeBanner = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   // const [date, setDate] = useState<Date | null>(null)
@@ -36,7 +36,7 @@ const Header = () => {
   return (
 
     <HomeBannerWrap>
-      <HomeBanner source={banner} resizeMode="cover" />
+      <HomeBannerImage source={banner} resizeMode="cover" />
       <HomeBannerContent>
         <View
           style={{ padding: 10}}
@@ -200,4 +200,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default HomeBanner;

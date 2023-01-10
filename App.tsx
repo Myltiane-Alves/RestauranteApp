@@ -5,6 +5,7 @@ import { createDrawerNavigator, DrawerContent } from '@react-navigation/drawer';
 import { Screen, Screens } from './screens';
 import { HomeScreen } from './screens/HomeScreen';
 import { AuthScreen } from './screens/AuthScreen';
+import { DrawerCustom } from './components/DrawerCustom';
 
 const Drawer = createDrawerNavigator<typeof Screens>();
 
@@ -18,9 +19,10 @@ export default function App() {
              drawerPosition: 'right',
              headerShown: false,
            }}
+           drawerContent={(props) =>  <DrawerCustom {...props}  />}
         >
-          {/* <Drawer.Screen name={Screen.Home} component={HomeScreen} /> */}
-          <Drawer.Screen name={Screen.Auth} component={AuthScreen} />
+          <Drawer.Screen name={Screen.Home} component={HomeScreen}  />
+          {/* <Drawer.Screen name={Screen.Auth} component={AuthScreen} /> */}
         </Drawer.Navigator>    
       </AppProvider>
     </NavigationContainer>

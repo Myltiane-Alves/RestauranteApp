@@ -15,55 +15,55 @@ const LayoutScrollView = styled.ScrollView`
 
 const LayoutContent = styled.View`
   margin-top: 69px;
-  flex: 1;
+  /* flex: 1;
   background-color: #fff;
-  min-height: ${Dimensions.get('window').height}px;
+  min-height: ${Dimensions.get('window').height}px; */
 `;
 
 export const Layout = ({
-    children,
-    header,
-    onRefresh
+  children,
+  header,
+  onRefresh
 }: LayoutProviderProps) => {
-    const [refreshing, setRefreshing] = useState(false);
-    const scrollRef = useRef<ScrollView>(null);
-    const toUp = () => {
-      scrollRef.current?.scrollTo({
-        y: 0,
-        animated: true,
-      });
-    };
-  
-    const onRefreshInner = useCallback(() => {
-      setRefreshing(true);
-  
-      if (typeof onRefresh === 'function') {
-        onRefresh(() => {
-          setRefreshing(false);
-        });
-      }
-    }, []);
+  const [refreshing, setRefreshing] = useState(false);
+  const scrollRef = useRef<ScrollView>(null);
+  const toUp = () => {
+    scrollRef.current?.scrollTo({
+      y: 0,
+      animated: true,
+    });
+  };
 
-    return (
-        <LayoutContext.Provider value={{ toUp }}>
-            <LayoutScrollView
-                ref={scrollRef as any}
-                refreshControl={
-                typeof onRefresh === 'function' ? (
-                    <RefreshControl
-                    refreshing={refreshing}
-                    onRefresh={onRefreshInner}
-                    progressViewOffset={vars.space * 2}
-                    />
-                ) : undefined
-                }
-            >
-                <SafeAreaView style={{ backgroundColor: vars.white }}>
-                <LayoutContent>{children}</LayoutContent>
-                </SafeAreaView>
-            </LayoutScrollView>
-            <StatusBar style="auto" />
+  const onRefreshInner = useCallback(() => {
+    setRefreshing(true);
+
+    if (typeof onRefresh === 'function') {
+      onRefresh(() => {
+        setRefreshing(false);
+      });
+    }
+  }, []);
+
+  return (
+    <LayoutContext.Provider value={{ toUp }}>
+      <LayoutScrollView
+        ref={scrollRef as any}
+        refreshControl={
+          typeof onRefresh === 'function' ? (
+            <RefreshControl
+              refreshing={refreshing}
+              onRefresh={onRefreshInner}
+              progressViewOffset={vars.space * 2}
+            />
+          ) : undefined
+        }
+      >
+        <SafeAreaView style={{ backgroundColor: vars.white }}>
+          <LayoutContent>{children}</LayoutContent>
+        </SafeAreaView>
+      </LayoutScrollView>
+      <StatusBar style="auto" />
       {header !== undefined && header}
-        </LayoutContext.Provider>
-    )
+    </LayoutContext.Provider>
+  )
 }
