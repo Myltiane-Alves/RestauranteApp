@@ -17,7 +17,7 @@ export default function App() {
     <NavigationContainer>
       <AppProvider>
         <Drawer.Navigator
-           initialRouteName={Screen.Auth}
+           initialRouteName={Screen.Home}
            screenOptions={{
              drawerPosition: 'right',
              headerShown: false,
