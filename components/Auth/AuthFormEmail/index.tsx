@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import { AuthFormLoginWrap } from '../AuthFormLoginWrap';
 import { InputField } from '../../InputField';
 import { vars } from '../../../values';
 import { AuthFormFooter } from '../AuthFormFooter';
 import { Button } from '../../Button';
 import { useDrawerNavigation } from '../../../hooks/useDrawerNavigation';
 import { Screen } from '../../../screens';
+import { AuthFormEmailWrap } from './AuthFormEmailWrap';
+import { PageTitle } from '../../PageTitle';
+import { useAuth } from '../../../hooks/useAuth';
 export const AuthFormEmail = () => {
     const navigation = useDrawerNavigation();
-    const [email, setEmail] = useState('')
-
-    //   const navigate = useNavigate()
+    const { email, setEmail, onSubmitEmail, isLoading } = useAuth();
 
     return (
-        <AuthFormLoginWrap>
+        <AuthFormEmailWrap>
+            <PageTitle title="Autenticação" />
             <InputField
                 label="E-mail"
                 style={{ marginTop: vars.space }}
@@ -35,12 +35,15 @@ export const AuthFormEmail = () => {
 
                 <Button
                     color="blue"
+                    onPress={onSubmitEmail}
+                    loading={isLoading}
+                    disabled={isLoading}
                 >
                     Próximo
                 </Button>
             </AuthFormFooter>
           
-        </AuthFormLoginWrap>
+        </AuthFormEmailWrap>
     )
 }
 

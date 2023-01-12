@@ -14,7 +14,6 @@ export const AuthFormLogin = () => {
     const { onSubmitLogin, email, setEmail, isLoading } = useAuth();
     const [password, setPassword] = useState('')
 
-
     return (
         <AuthFormLoginWrap>
             <PageTitle title="Fazer Login" />
@@ -48,9 +47,14 @@ export const AuthFormLogin = () => {
 
                 <Button
                     color="blue"
-                    // loading={isLoading}
-                    // disabled={isLoading}
-                    
+                    loading={isLoading}
+                    disabled={isLoading}
+                    onPress={() => 
+                        onSubmitLogin({
+                            email,
+                            password
+                        })
+                    }
                 >
                     Login
                 </Button>

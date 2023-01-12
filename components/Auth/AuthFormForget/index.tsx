@@ -11,29 +11,40 @@ import { AuthForgetMessage } from '../AuthForgetMessage';
 import { AuthForgetText } from '../AuthForgetText';
 import { AuthForgetIcon } from '../AuthForgetIcon';
 import { useAuth } from '../../../hooks/useAuth';
+import { PageTitle } from '../../PageTitle';
 
 export const AuthFormForget = () => {
+  const { isLoadingForget, onSubmitForget } = useAuth();
+  const navigation = useDrawerNavigation();
+
+  useEffect(
+    () => navigation.addListener('focus', () => onSubmitForget()),
+    [navigation]
+  );
 
   return (
     <AuthFormForgetWrap>
- 
-      
+      <PageTitle title="Esqueci a senha" />
+      {isLoadingForget && (
         <AuthForgetMessage>
           <ActivityIndicator size="small" color={vars.blue} />
           <AuthForgetText>Enviando e-mail...</AuthForgetText>
         </AuthForgetMessage>
-   
+      )}
+
+      {!isLoadingForget && (
         <AuthForgetMessage>
           <AuthForgetIcon source={check} />
           <AuthForgetText>
             Verifique as instruções no seu e-mail.
           </AuthForgetText>
         </AuthForgetMessage>
-    
+      )}
+
       <AuthFormFooter style={{ justifyContent: 'center' }}>
         <Button
           color="text"
-          
+          onPress={() => navigation.navigate(Screen.AuthLogin)}
         >
           Voltar para o login
         </Button>

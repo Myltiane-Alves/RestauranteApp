@@ -1,10 +1,10 @@
-// import { AuthLayout } from '../../components/';
-// // import { AuthFormEmail } from '../../components/Auth/';
+import { AuthLayout } from "../../components/Auth";
+import { AuthFormEmail } from "../../components/Auth/AuthFormEmail";
 
-// export const AuthEmailScreen = () => {
-//   return (
-//     <AuthLayout>
-//       {/* <AuthFormEmail /> */}
-//     </AuthLayout>
-//   );
-// };
+export const AuthEmailScreen = () => {
+  return (
+    <AuthLayout>
+      <AuthFormEmail />
+    </AuthLayout>
+  );
+};

@@ -15,7 +15,6 @@ export const AuthLayout = ({ children }: AuthLayoutProps) => {
     const { navigate } = useDrawerNavigation();
 
     return (
-
         <Layout>
             <AuthHeader onPress={() => navigate(Screen.Home)}>
                 <AuthLogo source={logo} />
@@ -23,10 +22,9 @@ export const AuthLayout = ({ children }: AuthLayoutProps) => {
             <KeyboardAwareScrollView>
                 <AuthBody>{children}</AuthBody>
                 <AuthFooter>
-                    <AuthFooterText>2022 @ Myltiane Alves. Todos os Direitos Reservados</AuthFooterText>
+                    <AuthFooterText>2023 @ Myltiane Alves. Todos os Direitos Reservados</AuthFooterText>
                 </AuthFooter>
             </KeyboardAwareScrollView>
         </Layout>
-
     )
 }

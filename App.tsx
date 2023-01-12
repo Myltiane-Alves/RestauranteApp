@@ -24,8 +24,8 @@ export default function App() {
            drawerContent={(props) =>  <DrawerCustom {...props}  />}
         >
           <Drawer.Screen name={Screen.Home} component={HomeScreen}  />
-          {/* <Drawer.Screen name={Screen.Schedule} component={ScheduleScreen}  /> */}
-          {/* <Drawer.Screen name={Screen.Auth} component={AuthScreen} /> */}
+          <Drawer.Screen name={Screen.Schedule} component={ScheduleScreen}  />
+          <Drawer.Screen name={Screen.Auth} component={AuthScreen} />
           {/* <Drawer.Screen name={Screen.AuthRegister} component={AuthRegisterScreen} /> */}
         </Drawer.Navigator>    
       </AppProvider>

@@ -5,5 +5,5 @@ import { vars } from '../../values';
 export const AuthBody = styled.View`
   padding: ${vars.spacePx};
   width: 100%;
-  min-height: ${Dimensions.get('window').height - 252}px;
+  min-height: ${Dimensions.get('window').height - 292}px;
 `;
