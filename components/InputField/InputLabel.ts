@@ -4,5 +4,5 @@ import { InputFocusedProps } from './InputFocusedProps';
 
 export const InputLabel = styled.Text<InputFocusedProps>`
   width: 100%;
-  color: ${(props) => (props.focused ? vars.blue : vars.gray)};
+  color: ${(props) => (props.focused ? vars.black100 : vars.black)};
 `;

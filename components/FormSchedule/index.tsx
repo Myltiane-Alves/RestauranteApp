@@ -4,10 +4,9 @@ import { InputField } from '../InputField';
 import { SchedulesDescription } from './SchedulesDescription';
 import { SchedulesWrap } from './SchedulesWrap';
 import React, { useState } from 'react'
+import { TextInput, View } from 'react-native'
 import { Button } from '../Button';
-import { View } from 'react-native';
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+
 
 export const FormSchedule = () => {
     const [name, setName] = useState('')
@@ -20,12 +19,17 @@ export const FormSchedule = () => {
         <SchedulesWrap>
             <SchedulesDescription>Reserva de Mesa</SchedulesDescription>
 
-            <InputField
-                label="Nome Completo"
-                style={{ marginTop: vars.space }}
-                inputProps={{ value: name, onChangeText: setName }}
-            />
+            <View>
+                <TextInput>Nome Completo</TextInput>
+                <InputField
+                    label="Nome Completo"
+                    style={{ marginTop: vars.space }}
+                    inputProps={{ value: name, onChangeText: setName }}
+                />
 
+            </View>
+
+            <TextInput>Email</TextInput>
             <InputField
                 label="E-mail"
                 style={{ marginTop: vars.space }}
@@ -37,8 +41,9 @@ export const FormSchedule = () => {
                 }}
             />
 
+            <TextInput>Quantas Pessoas</TextInput>
             <InputField
-                label="Quantas Pessoas ?"
+                label={"Quantas Pessoas ?"}
                 style={{ marginTop: vars.space }}
                 inputProps={{
                     value: quantity,
@@ -47,7 +52,7 @@ export const FormSchedule = () => {
             />
             
 
-           
+            <TextInput>Escolha Data e Hora</TextInput>
             <InputField
                 label='Data e Hora'
                 style={{ marginTop: vars.space}}
@@ -59,7 +64,10 @@ export const FormSchedule = () => {
                
             
 
-            <Button>
+            <Button
+                style={{ marginTop: vars.space}}
+                color="blue"
+            >
                 Reservar
             </Button>
 
