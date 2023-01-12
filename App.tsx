@@ -8,6 +8,7 @@ import { AuthScreen } from './screens/AuthScreen';
 import { DrawerCustom } from './components/DrawerCustom';
 import { ScheduleScreen } from './screens/SchedulesScreen';
 import { AuthRegisterScreen } from './screens/AuthRegisterScreen';
+import OrdersScreen from './screens/Oders';
 
 const Drawer = createDrawerNavigator<typeof Screens>();
 
@@ -26,6 +27,7 @@ export default function App() {
           <Drawer.Screen name={Screen.Home} component={HomeScreen}  />
           <Drawer.Screen name={Screen.Schedule} component={ScheduleScreen}  />
           <Drawer.Screen name={Screen.Auth} component={AuthScreen} />
+          <Drawer.Screen name={Screen.Orders} component={OrdersScreen} />
           {/* <Drawer.Screen name={Screen.AuthRegister} component={AuthRegisterScreen} /> */}
         </Drawer.Navigator>    
       </AppProvider>

@@ -43,11 +43,7 @@ export const DrawerCustom = (props) => {
                         onPress={() => props.navigation.navigate(Screen.Home)}
                         labelStyle={styles.drawerItemLabel}
                     />
-                    <DrawerItem
-                        label="Blog"
-                        onPress={() => props.navigation.navigate(Screen.Home)}
-                        labelStyle={styles.drawerItemLabel}
-                    />
+                 
                     <DrawerItem
                         label="Contatos"
                         onPress={() => props.navigation.navigate(Screen.Home)}
