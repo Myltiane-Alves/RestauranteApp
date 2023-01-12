@@ -1,5 +1,6 @@
 export enum Screen  {
     Home = 'Home',
+    Schedule = 'Schedule',
     Contact = 'Contact',
     Menu = 'Menu',
     Auth = 'Auth',
@@ -12,6 +13,7 @@ export enum Screen  {
 
 export const Screens = {
     [Screen.Home]: undefined,
+    [Screen.Schedule]: undefined,
     [Screen.Contact]: undefined,
     [Screen.Menu]: undefined,
     [Screen.Auth]: undefined,

@@ -6,5 +6,6 @@ export const styles = StyleSheet.create({
     textAlign: 'center',
     width: 250,
     padding: 1,
+    color: '#3AB8FB',
   },
 });

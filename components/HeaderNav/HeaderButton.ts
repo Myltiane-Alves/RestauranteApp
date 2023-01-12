@@ -5,4 +5,5 @@ export const HeaderButton = styled.TouchableOpacity`
   align-items: center;
   width: 50px;
   height: 50px;
+  margin-top: 40px;
 `;

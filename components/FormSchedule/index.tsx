@@ -5,11 +5,16 @@ import { SchedulesDescription } from './SchedulesDescription';
 import { SchedulesWrap } from './SchedulesWrap';
 import React, { useState } from 'react'
 import { Button } from '../Button';
-
+import { View } from 'react-native';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export const FormSchedule = () => {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
+    const [startDate, setStartDate] = useState(new Date());
+    const [quantity, setQuantity] = useState('');
+
     return (
 
         <SchedulesWrap>
@@ -32,25 +37,27 @@ export const FormSchedule = () => {
                 }}
             />
 
-            <div className="field">
-                <select name="Pessoas" id="">
-                    <option> -- Quantas Pessoas -- </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5+</option>
-                </select>
-            </div>
+            <InputField
+                label="Quantas Pessoas ?"
+                style={{ marginTop: vars.space }}
+                inputProps={{
+                    value: quantity,
+                    onChangeText: setQuantity,
+                }}
+            />
+            
 
-            <div className="field">
+           
+            <InputField
+                label='Data e Hora'
+                style={{ marginTop: vars.space}}
+                inputProps={{
 
-                <input type="date" name="birth_at" />
-            </div>
-            <div className="field">
-                <label>Hora</label>
-                <input type="time" name="birth_at" />
-            </div>
+                }}
+            />
+                
+               
+            
 
             <Button>
                 Reservar

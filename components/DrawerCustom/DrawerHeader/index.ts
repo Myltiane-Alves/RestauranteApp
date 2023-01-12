@@ -5,4 +5,5 @@ import { vars } from "../../../values";
 export const DrawerHeader = styled.TouchableOpacity`
     align-items: flex-end;
     padding: ${vars.spacePx};
+   padding-top: 35px;
 `;

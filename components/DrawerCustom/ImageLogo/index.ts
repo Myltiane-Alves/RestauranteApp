@@ -1,9 +1,6 @@
 import styled from 'styled-components/native';
 
 export const ImageLogo = styled.Image`
-  justify-content: flex-start;
-  align-items: center;
   width: 60px;
   height: 60px;
-
 `;

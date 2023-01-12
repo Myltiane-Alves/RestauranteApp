@@ -14,11 +14,11 @@ export const HeaderNav = ({onPressBack}: HeaderProps) => {
         <Fragment>
             <HeaderWrap>
                 <HeaderButton onPress={() => navigation.toggleDrawer()}>
-                    <MaterialIcons name="menu" size={32} color="black" />
+                    <MaterialIcons name="menu" size={40} color="#3AB8FB" />
                 </HeaderButton>
                 {onPressBack && (
                     <HeaderButton onPress={onPressBack}>
-                        <MaterialIcons name="arrow-back" size={32} color="black" />
+                        <MaterialIcons name="arrow-back" size={40} color="#3AB8FB" />
                     </HeaderButton>
                 )}
             </HeaderWrap>
