@@ -47,6 +47,7 @@ export const InputField = ({
 
     return (
         <InputWrap focused={focused} style={style}>
+             <InputLabel focused={focused}>{label}</InputLabel>
             <Input 
                 {...(inputProps as any)}
                 onFocus={(e) => {

@@ -1,10 +1,11 @@
-// import { AuthLayout } from '../../components/Auth';
-// import { AuthFormRegister } from '../../components/Auth/FormRegister';
+import { AuthLayout } from '../../components/Auth';
+import { AuthFormRegister } from '../../components/Auth/AuthFormRegister';
 
-// export const AuthRegisterScreen = () => {
-//   return (
-//     <AuthLayout>
-//       <AuthFormRegister />
-//     </AuthLayout>
-//   );
-// };
+
+export const AuthRegisterScreen = () => {
+  return (
+    <AuthLayout>
+      <AuthFormRegister />
+    </AuthLayout>
+  );
+};

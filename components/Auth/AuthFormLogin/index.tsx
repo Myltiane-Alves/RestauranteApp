@@ -6,15 +6,18 @@ import { AuthFormFooter } from '../AuthFormFooter';
 import { Button } from '../../Button';
 import { useDrawerNavigation } from '../../../hooks/useDrawerNavigation';
 import { Screen } from '../../../screens';
+import { useAuth } from '../../../hooks/useAuth';
+import { PageTitle } from '../../PageTitle';
+
 export const AuthFormLogin = () => {
     const navigation = useDrawerNavigation();
+    const { onSubmitLogin, email, setEmail, isLoading } = useAuth();
     const [password, setPassword] = useState('')
-    const [email, setEmail] = useState('')
-    const url = "/login";
-    //   const navigate = useNavigate()
+
 
     return (
         <AuthFormLoginWrap>
+            <PageTitle title="Fazer Login" />
             <InputField
                 label="E-mail"
                 style={{ marginTop: vars.space }}

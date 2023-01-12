@@ -7,6 +7,7 @@ import { HomeScreen } from './screens/HomeScreen';
 import { AuthScreen } from './screens/AuthScreen';
 import { DrawerCustom } from './components/DrawerCustom';
 import { ScheduleScreen } from './screens/SchedulesScreen';
+import { AuthRegisterScreen } from './screens/AuthRegisterScreen';
 
 const Drawer = createDrawerNavigator<typeof Screens>();
 
@@ -22,9 +23,10 @@ export default function App() {
            }}
            drawerContent={(props) =>  <DrawerCustom {...props}  />}
         >
-          {/* <Drawer.Screen name={Screen.Home} component={HomeScreen}  /> */}
-          <Drawer.Screen name={Screen.Schedule} component={ScheduleScreen}  />
+          <Drawer.Screen name={Screen.Home} component={HomeScreen}  />
+          {/* <Drawer.Screen name={Screen.Schedule} component={ScheduleScreen}  /> */}
           {/* <Drawer.Screen name={Screen.Auth} component={AuthScreen} /> */}
+          {/* <Drawer.Screen name={Screen.AuthRegister} component={AuthRegisterScreen} /> */}
         </Drawer.Navigator>    
       </AppProvider>
     </NavigationContainer>
