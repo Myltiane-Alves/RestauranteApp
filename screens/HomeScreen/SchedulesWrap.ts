@@ -7,4 +7,5 @@ export const SchedulesWrap = styled.View`
     /* position: absolute; */
     width: 300px;
     height: 500px;
+    
 `;

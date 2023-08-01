@@ -17,4 +17,5 @@ export const vars = {
 
     borderRadius,
     borderRadiusPx: `${borderRadius}px`,
+    backgroundColor: 'rgba(42, 37, 41, 1)'
 }
