@@ -14,7 +14,8 @@ export const vars = {
     
     space,
     spacePx: `${space}px`,
-
+    btnPrimary: '#07CDC3',
+    
     borderRadius,
     borderRadiusPx: `${borderRadius}px`,
     backgroundColor: 'rgba(42, 37, 41, 1)'
